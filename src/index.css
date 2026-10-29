@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-navy: #071426;
+    --bg-midnight: #0B1F3A;
+    --bg-card: #0D223F;
+    --border-navy: #183359;
+    --accent-cyan: #00D9FF;
+    --accent-violet: #7C4DFF;
+    --accent-orange: #FF7A30;
+    --text-white: #F8FAFC;
+    --text-soft: #94A3B8;
+  }
+
+  body {
+    background-color: #071426;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Space Grotesk', 'Rajdhani', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-tech {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom glow and circuit styling */
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.25);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 50px rgba(0, 217, 255, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px rgba(255, 122, 48, 0.3);
+}
+
+.glow-violet {
+  box-shadow: 0 0 30px rgba(124, 77, 255, 0.3);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 217, 255, 0.5);
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 12px rgba(255, 122, 48, 0.5);
+}
+
+/* Circuit grid background pattern */
+.bg-circuit-grid {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0, 217, 255, 0.12) 1px, transparent 0),
+    linear-gradient(to right, rgba(27, 53, 90, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 53, 90, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px, 64px 64px, 64px 64px;
+}
+
+/* Subtle glassmorphism */
+.glass-panel {
+  background: rgba(11, 31, 58, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 217, 255, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(13, 34, 63, 0.88);
+  border-color: rgba(0, 217, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 217, 255, 0.15);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071426;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183359;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D9FF;
+}
