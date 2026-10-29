@@ -7,7 +7,6 @@ import {
   Menu,
   X,
   Sparkles,
-  Zap,
   ChevronRight,
 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
@@ -82,24 +81,14 @@ export const Navbar: React.FC = () => {
           {/* Logo & Brand Identity */}
           <Link
             to="/"
-            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00D9FF] rounded-lg p-1"
+            className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00D9FF] rounded-lg p-1 transition-transform hover:scale-[1.02]"
             title="LOGIC LORE — Story-Driven STEM Learning"
           >
-            {/* Custom Brand Circuit Icon */}
-            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[#0B1F3A] to-[#071426] border border-[#00D9FF]/40 flex items-center justify-center group-hover:border-[#00D9FF] group-hover:shadow-[0_0_15px_rgba(0,217,255,0.4)] transition-all duration-300">
-              <Zap className="w-5 h-5 text-[#00D9FF] group-hover:text-[#FF7A30] transition-colors" />
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-[#FF7A30] animate-pulse" />
-            </div>
-
-            {/* Brand Typography */}
-            <div className="flex flex-col text-left">
-              <span className="text-xl sm:text-2xl font-extrabold tracking-wider text-white font-tech group-hover:text-[#00D9FF] transition-colors flex items-center gap-1">
-                LOGIC LORE
-              </span>
-              <span className="text-[10px] tracking-widest text-[#00D9FF]/80 uppercase font-semibold">
-                STEM Universe
-              </span>
-            </div>
+            <img
+              src="/images/logic-lore-logo.png"
+              alt="LOGIC LORE"
+              className="h-9 sm:h-11 w-auto object-contain filter drop-shadow-[0_0_12px_rgba(255,122,48,0.25)] group-hover:drop-shadow-[0_0_16px_rgba(0,217,255,0.4)] transition-all"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

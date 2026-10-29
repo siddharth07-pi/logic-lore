@@ -5,6 +5,8 @@ export const BRAND_CONFIG = {
   legalName: 'Logic Lore Technologies Private Limited',
   tagline: 'READ. BUILD. SAVE HUMANITY.',
   subtitle: 'Story-Driven STEM Learning',
+  logoUrl: '/images/logic-lore-logo.png',
+  logoDarkUrl: '/images/logic-lore-logo-dark.png',
   shortBio: 'LOGIC LORE combines imaginative science-fiction storytelling with hands-on electronics and practical engineering challenges for young inventors.',
   foundingYear: 2026,
   targetAudience: 'Ages 8–14 & Curious Builders',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Sparkles, Shield, GraduationCap } from 'lucide-react';
+import { Sparkles, Shield, GraduationCap } from 'lucide-react';
 import { BRAND_CONFIG } from '../data/brand';
 
 export const Footer: React.FC = () => {
@@ -15,18 +15,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand Column (Span 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="inline-flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0B1F3A] to-[#071426] border border-[#00D9FF]/40 flex items-center justify-center group-hover:border-[#00D9FF] transition-all">
-                <Zap className="w-5 h-5 text-[#00D9FF] group-hover:text-[#FF7A30] transition-colors" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-extrabold tracking-wider text-white font-tech">
-                  LOGIC LORE
-                </span>
-                <span className="text-[10px] tracking-widest text-[#00D9FF]/80 uppercase font-semibold">
-                  READ. BUILD. SAVE HUMANITY.
-                </span>
-              </div>
+            <Link to="/" className="inline-flex items-center group">
+              <img
+                src="/images/logic-lore-logo.png"
+                alt="LOGIC LORE"
+                className="h-11 sm:h-13 w-auto object-contain filter drop-shadow-[0_0_15px_rgba(255,122,48,0.3)] transition-all"
+              />
             </Link>
 
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
